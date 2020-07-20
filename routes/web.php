@@ -33,11 +33,11 @@ $router->group(['middleware' => 'auth'], function() use($router) {
     $router->put('/categories/{id}', 'CategoryController@update');
     $router->delete('/categories/{id}', 'CategoryController@destroy');
 
-    $router->get('fleets', 'FleetsController@index');
-    $router->post('fleets', 'FleetsController@store');
-    $router->get('fleets/{id}', 'FleetsController@edit');
-    $router->put('fleets/{id}', 'FleetsController@update');
-    $router->delete('fleets/{id}', 'FleetsController@destroy');
+    $router->get('fleet', 'FleetsController@index');
+    $router->post('fleet', 'FleetsController@store');
+    $router->get('fleet/{id}', 'FleetsController@edit');
+    $router->put('fleet/{id}', 'FleetsController@update');
+    $router->delete('fleet/{id}', 'FleetsController@destroy');
 
     $router->post('/logout', 'UserController@logout');
 });
