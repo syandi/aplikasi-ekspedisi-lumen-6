@@ -48,8 +48,8 @@ class UserController extends Controller
             'photo' => $filename,
             'email' => $request->email,
             'password' => app('hash')->make($request->password),
-            'phone_number' => $request->phone_number,
-            // 'api_token' => 'test',
+            'phone_number' => $request->phone_number,            
+            'api_token' => Str::random(40),
             'role' => $request->role,
             'status' => $request->status
         ]);
