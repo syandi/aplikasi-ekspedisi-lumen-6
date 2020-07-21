@@ -14,12 +14,12 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Daengweb',
+            'name' => 'apiweb',
             'identity_id' => '12345678345',
             'gender' => 1,
             'address' => 'Jl Sultan Hasanuddin',
-            // 'photo' => 'daengweb.png', //note: tidak ada gambar
-            'email' => 'admin@daengweb.id',
+            // 'photo' => 'apiweb.png', //note: tidak ada gambar
+            'email' => 'admin@gmail.id',
             'password' => app('hash')->make('secret'),
             'phone_number' => '085343966997',
             'api_token' => Str::random(40),
